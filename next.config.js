@@ -25,4 +25,4 @@ module.exports = withCss({
     }
     return config
   },
-})
+});

@@ -3,9 +3,6 @@ node_js: "12"
 cache:
   yarn: true
 
-before_install:
-  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git"
-
 install:
   - yarn
 
