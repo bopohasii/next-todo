@@ -1,0 +1,64 @@
+{
+  "name": "next-todo",
+  "version": "1.0.0",
+  "description": "google keep app // nextjs, react, hooks, rxjs, andt // auth with nextjs, ssr",
+  "main": "index.js",
+  "repository": "https://github.com/bopohasii/next-todo.git",
+  "author": "Bohdan Pohasii <bogdanpogasiy@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "next start",
+    "commit": "npx git-cz",
+    "lint": "echo 0",
+    "lint:fix": "yarn lint --fix",
+    "test": "npx jest",
+    "build": "next build",
+    "ci:lint": "yarn lint",
+    "ci:test": "yarn test | npx coveralls",
+    "ci:build": "yarn build",
+    "ci:release": "npx semantic-release",
+    "ci:deploy": "npx now --token $NOW_TOKEN"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.9.2",
+    "babel-plugin-import": "^1.9.1",
+    "next": "latest",
+    "null-loader": "2.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.0.0",
+    "@commitlint/config-conventional": "8.0.0",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "@types/jest": "24.0.13",
+    "commitizen": "3.1.1",
+    "coveralls": "3.0.4",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "2.4.0",
+    "jest": "24.8.0",
+    "npx": "10.2.0",
+    "semantic-release": "^15.13.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/bopohasii/next-todo/issues"
+  }
+}

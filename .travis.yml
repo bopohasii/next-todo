@@ -1,0 +1,25 @@
+language: node_js
+node_js: "12"
+cache:
+  yarn: true
+
+before_install:
+  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git"
+
+install:
+  - yarn
+
+script:
+  - yarn ci:lint
+  - yarn ci:test
+  - yarn ci:build
+
+before_deploy:
+  - git checkout ${TRAVIS_BRANCH}
+
+deploy:
+  provider: script
+  script: yarn ci:release && yarn ci:deploy
+  skip_cleanup: true
+  on:
+    branch: master
