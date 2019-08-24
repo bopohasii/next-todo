@@ -9,15 +9,12 @@ module.exports = {
   ],
   coverageDirectory: '<rootDir>/coverage',
   collectCoverageFrom: [
-    '**/*.ts',
-    '!**/dist/**',
-    '!**/playground/**',
+    '**/*.js',
   ],
   testPathIgnorePatterns: [
     '/node_modules/',
-    '/playground/',
   ],
   testMatch: [
-    '**/src/**/*.spec.ts',
+    '**/components/**/*.spec.js',
   ],
 };
