@@ -8,7 +8,7 @@ install:
 
 script:
   - yarn ci:lint
-  - yarn ci:test
+#  - yarn ci:test
   - yarn ci:build
 
 before_deploy:

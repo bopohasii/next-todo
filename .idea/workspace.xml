@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45aa1b1b-e3a8-4376-a1b8-fedfc535e980" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/compoents/Page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compoents/TodoItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/auth/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/auth/register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/todo/[todoId].jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,12 +66,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="ci:deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.commit">
+    <configuration name="commit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="ci:deploy" />
+        <script value="commit" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -125,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.commit" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.test" />
-        <item itemvalue="npm.ci:deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +140,7 @@
       <workItem from="1566637290528" duration="1364000" />
       <workItem from="1566642442876" duration="3851000" />
       <workItem from="1568140286527" duration="2477000" />
-      <workItem from="1568202694658" duration="3755000" />
+      <workItem from="1568202694658" duration="4331000" />
     </task>
     <servers />
   </component>
