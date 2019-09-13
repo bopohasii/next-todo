@@ -21,15 +21,21 @@
     "ci:deploy": "npx now --token $NOW_TOKEN"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "@zeit/next-css": "^1.0.1",
     "antd": "^3.9.2",
     "babel-plugin-import": "^1.9.1",
+    "faker": "^4.1.0",
     "next": "latest",
     "null-loader": "2.0.0",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@commitlint/cli": "8.0.0",
     "@commitlint/config-conventional": "8.0.0",
     "@semantic-release/changelog": "^3.0.2",
